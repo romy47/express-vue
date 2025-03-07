@@ -1,1 +1,6 @@
+# client app
 vue-client/node_modules
+
+# auth service
+micro-services/auth-service/node_modules
+micro-services/auth-service/.env
