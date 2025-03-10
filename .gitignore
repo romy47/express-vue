@@ -2,6 +2,6 @@
 vue-client/node_modules
 
 # auth service
-micro-services/auth-service/node_modules
-micro-services/auth-service/.env
-micro-services/auth-service/dist
+services/toll-service/node_modules
+services/atollservice/.env
+services/toll-service/dist
