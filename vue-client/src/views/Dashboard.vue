@@ -1,12 +1,15 @@
 <script setup lang="ts">
 import TollBooth from '@/components/TollBooth.vue'
+import { useBoothStore } from '@/stores/BoothStore'
+const store = useBoothStore()
 </script>
 
 <template>
   <div class="flex justify-between">
-    <TollBooth :booth-count="1" :header="'Semi Trucks'"></TollBooth>
-    <TollBooth :booth-count="2" :header="'Sedans and Suv'"></TollBooth>
-    <TollBooth :booth-count="3" :header="'Sedans and Suv'"></TollBooth>
-    <TollBooth :booth-count="4" :header="'Emergency Responders'"></TollBooth>
+    <TollBooth
+      :booth-id="booth.boothId"
+      :header="booth.header"
+      v-for="booth in store.allBooths"
+    ></TollBooth>
   </div>
 </template>
