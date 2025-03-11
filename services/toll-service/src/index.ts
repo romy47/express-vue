@@ -7,6 +7,7 @@ dotenv.config();
 
 const app = express();
 app.use(cors());
+app.use(express.json());
 const port = process.env.PORT;
 app.get("/", (req, res) => {
   res.send("Toll Service");
@@ -18,26 +19,3 @@ app.use(`/api/`, router);
 app.listen(port, () => {
   console.log(`Auth Service Running on port: ${port}`);
 });
-
-enum test {
-  go,
-  stop,
-  wait,
-}
-
-function getFullName(firstName: string, lastName: string): string {
-  return firstName + " " + lastName;
-}
-
-interface User {
-  firstName: string;
-}
-
-interface User {
-  lastName: string;
-}
-
-const myUser: User = {
-  firstName: "john",
-  lastName: "doe",
-};

@@ -14,3 +14,17 @@ export async function getAllBooths(): Promise<IBooth[]> {
   }
   return response.json()
 }
+
+export async function updateBooth(booth: IBooth): Promise<IBooth> {
+  const response = await fetch(`${API_BASE_URL}/booths/${booth.boothId}`, {
+    method: 'PUT',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify(booth),
+  })
+  if (!response.ok) {
+    throw new Error(`HTTP error! Status: ${response.status}`)
+  }
+  return response.json()
+}

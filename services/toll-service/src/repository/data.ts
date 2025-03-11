@@ -26,6 +26,12 @@ class Data {
   public getAllBooths(): IBooth[] {
     return this.availableBooths;
   }
+
+  public updateBooth(booth: IBooth) {
+    this.availableBooths = this.availableBooths.map((ab) =>
+      ab.boothId === booth.boothId ? booth : ab
+    );
+  }
 }
 
 export const data = Data.Instance;

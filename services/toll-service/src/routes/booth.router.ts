@@ -7,6 +7,10 @@ tollRouter
   })
   .get("/", (req, res) => {
     res.send(data.getAllBooths());
+  })
+  .put("/:boothId", (req, res) => {
+    data.updateBooth(req.body);
+    res.send({ message: "successfully updated" });
   });
 
 export default tollRouter;
