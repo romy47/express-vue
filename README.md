@@ -3,6 +3,8 @@
 ## Overview
 This project is an **Automatic Toll Dashboard** built using **Vue.js** (with Pinia for state management) and **Express.js**. The dashboard provides real-time monitoring and control of an automatic toll booth, allowing users to:
 
+![Toll Dashboard](project-screenshots/toll-dashboard.png)
+
 - View the number of cars currently in different lanes.
 - Change the digital display text of the booths.
 - Open or close a booth dynamically.
@@ -22,8 +24,7 @@ To set up the project, follow these steps:
 
 ### 1. Clone the Repository
 ```bash
-git clone <repository-url>
-cd <repository-name>
+git clone https://github.com/romy47/express-vue.git
 ```
 
 ### 2. Install Dependencies & Running
