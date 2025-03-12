@@ -1,4 +1,4 @@
-# Automatic Toll Dashboard
+# Automatic TollBooth Monitoring Dashboard
 
 ## Overview
 This project is an **Automatic Toll Dashboard** built using **Vue.js** (with Pinia for state management) and **Express.js**. The dashboard provides real-time monitoring and control of an automatic toll booth, allowing users to:
@@ -14,7 +14,7 @@ The backend is powered by an **Express.js server** using an in-memory database, 
 ## Project Structure
 ```bash
 .
-├── services/            # Backend (Express server with in-memory DB)
+├── services/toll-service/            # Backend (Express server with in-memory DB)
 ├── vue-client/         # Frontend (Vue.js application with Pinia)
 ├── README.md          # Project documentation
 ```
@@ -24,7 +24,7 @@ To set up the project, follow these steps:
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/romy47/express-vue.git
+git clone https://github.com/romy47/tollbooth-monitoring.git
 ```
 
 ### 2. Install Dependencies & Running
